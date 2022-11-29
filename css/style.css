@@ -14,9 +14,18 @@
     font-family: 'Poppins', sans-serif;
 }
 
+a {
+    text-decoration: none; 
+}
+
 /* buttons */
 .btn {
-
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    padding: 18px 12px;
+    border-radius: 36px;
+    background-color: aquamarine;
 }
 /* buttons end */
 
@@ -26,6 +35,20 @@
     width: 100%;
     height: 400px;
     background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 12%;
+}
+
+.inner-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-color: red;
 }
 /* header end */
 
@@ -36,8 +59,9 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding: 0px 12%;
 }
 /* links section end */
 
@@ -45,7 +69,52 @@
 /* footer */
 footer {
     width: 100%;
-    height: 300px;
     background-color: black;
+    padding: 0px 12%;
+}
+
+.footer-row {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 12px;
+    padding: 12px 0px;
+}
+
+.footer-cell {
+    flex: 1;
+    height: 100%;
+    background-color: aqua;
 }
 /* footer end */
+
+/* MEDIA */
+@media (max-width: 991.98px) {
+
+}
+
+@media (max-width: 767.98px) {
+    .btn {
+        width: 90%;
+    }
+}
+
+@media (max-width: 575.98px) {
+
+    .btn {
+        width: 100%;
+    }
+
+    .header,
+    .links-container,
+    footer {
+        padding: 0px 6%;
+    }
+
+    .footer-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
