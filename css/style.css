@@ -76,6 +76,10 @@ a {
 .link-card {
     width: 100%;
     margin: 12px 0px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .link-card p {
