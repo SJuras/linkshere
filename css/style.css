@@ -25,7 +25,8 @@ a {
     text-align: center;
     padding: 18px 12px;
     border-radius: 36px;
-    background-color: aquamarine;
+    background-color: #00d1d2; 
+    color: #34303d;
 }
 /* buttons end */
 
@@ -57,10 +58,15 @@ a {
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    border: 4px solid #000; 
+    border: 4px solid #34303d;; 
     box-shadow: 6px 8px 18px rgba(0,0,0,0.3); 
     background-color: #fff; 
     margin-bottom: 24px;  
+}
+
+.header .inner-container h1,
+.header .inner-container h2 {
+    color: #34303d; 
 }
 /* header end */
 
@@ -68,12 +74,12 @@ a {
 /* links section */
 .links-container {
     width: 100%;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     padding: 0px 12%;
+    background-color: #fffdfb; 
 }
 
 .link-card {
@@ -92,13 +98,17 @@ a {
 .inner-container-padding {
     padding-top: 24px; 
 }
+
+.last-link-margin-bottom {
+    margin-bottom: 72px;
+}
 /* links section end */
 
 
 /* footer */
 footer {
     width: 100%;
-    background-color: black;
+    background-color: #34303d; 
     padding: 0px 12%;
 }
 
@@ -115,7 +125,29 @@ footer {
 .footer-cell {
     flex: 1;
     height: 100%;
-    background-color: aqua;
+}
+
+.footer-cell h3,
+.footer-cell h4,
+.footer-cell p {
+    color:#fffdfb;  
+}
+
+.footer-cell h4 span,
+.footer-cell p span {
+    color: #f8003c;  
+}
+
+.footer-title {
+    margin-bottom: 24px;
+}
+
+.footer-subtitle {
+    margin-bottom: 30px; 
+}
+
+.footer-cell-2 p {
+    text-align: right; 
 }
 /* footer end */
 
