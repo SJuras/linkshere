@@ -37,6 +37,12 @@ a {
     background-color: #00d1d2; 
     color: #34303d;
     font-weight: 600; 
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background-color: #34303d;
+    color: #00d1d2; 
 }
 /* buttons end */
 
